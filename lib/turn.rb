@@ -47,7 +47,7 @@ def turn(board)
       display_board(move(board, input))
     else
       puts "Invalid Selection!"
-      turn(board)
+      # turn(board)
     end
 end
 
