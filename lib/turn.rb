@@ -5,6 +5,13 @@ def valid_move?(board, position)
   # else
   #   return false
   # end
+     if index == nil || index < 0 || index > 8
+        false
+      elsif position_taken?(board, index)
+        false
+      else
+        true
+      end
 end
 
 
