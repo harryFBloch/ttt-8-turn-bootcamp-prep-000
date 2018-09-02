@@ -10,7 +10,6 @@ end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, position)
-  position += 1
   if board[position] == "" || board[position] == " " || board[position] == nil
     return false
   elsif board[position] == "X" || board[position] == "O"
@@ -31,7 +30,7 @@ end
 
 def input_to_index(move)
   puts = "TEST"
-  move.to_i - 1
+  move.to_i
 end
 
 def move(board, move_num, player = "X")
