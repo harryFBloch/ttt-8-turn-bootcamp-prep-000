@@ -31,7 +31,7 @@ end
 
 def input_to_index(move)
   puts = "TEST"
-  move.to_i
+  move.to_i - 1
 end
 
 def move(board, move_num, player = "X")
